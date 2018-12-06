@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BASIC CALCULATOR</title>
+	<link rel="stylesheet" type="text/css" href="new 1.css">
+</head>
+  <body>
+
+<input type="text" id="num" style="padding:10px 15px;border-radius:15px">
+<div id="calculator" class="calculator">
+<div id="viewer" class="viewer"></div>
+
+ <button onclick="one()" style="padding:10px 15px;">1</button>
+	  <button onclick="two()" style="padding:10px 15px;">2</button>
+	  <button onclick="three()" style="padding:10px 15px;">3</button>
+	   <button onclick="four()" style="padding:10px 15px">4</button>
+	  <button onclick="five()"  style="padding:10px 15px;">5</button>
+	  <button onclick="six()"  style="padding:10px 15px;">6</button>
+	   <button onclick="seven()" style="padding:10px 15px;">7</button>
+	  <button onclick="eight()" style="padding:10px 15px;">8</button>
+	  <button onclick="nine()" style="padding:10px 15px;">9</button>
+	  <button onclick="zero()" style="padding:10px 15px;">0</button>
+	   <button onclick="add()" style="padding:10px 15px;">+</button>
+	   <button onclick="subtract()" style="padding:10px 15px;">-</button>
+	   <button onclick="multiply ()" style="padding:10px 15px;">*</button>
+	  <button onclick="equals()" style="padding:10px 15px;">=</button>
+	  <button onclick ="divide()" style="padding:10px 15px;">/</button>
+	  
+	 
+	  
+	  
+	  <script type="text/javascript">
+		  
+		  let n2 = 0;
+		  var operator = 0;
+		  function equals(){
+		  let n1 = document.getElementById("num").value;
+		  
+		  if (parseInt(operator) == 1) {
+		  let n1 = document.getElementById("num").value;
+		  document.getElementById("num").value = parseInt(n1) + parseInt(n2);
+		  }
+		  		  
+		  else if (parseInt(operator) == 2) {
+		  let n1 = document.getElementById("num").value;
+		  document.getElementById("num").value = parseInt(n2) - parseInt(n1);
+		  
+		  }
+		  else if (parseInt(operator) == 3) {
+		  let n1 = document.getElementById("num").value;
+		  document.getElementById("num").value = parseInt(n1) * parseInt(n2);
+		  
+		  }
+		  
+		  
+		  else if (parseInt(operator) == 4) {
+		  let n1 = document.getElementById("num").value;
+		  document.getElementById("num").value = parseInt(n1) / parseInt(n2);
+		  
+		  }
+		  
+		  
+		  
+		  operator = 0;
+		  
+		  }
+		  
+		  
+		  
+		  
+		  
+		  
+		  function add(){
+			n2 = document.getElementById("num").value;
+			document.getElementById("num").value = "";
+			operator = 1;
+		  }
+		  function subtract(){
+		    n2 = document.getElementById("num").value;
+		    document.getElementById("num").value = "";
+			operator = 2;
+		  }
+		  
+		  function multiply(){
+		    n2 = document.getElementById("num").value;
+		    document.getElementById("num").value = "";
+			operator = 3;
+		  }
+		  
+		  function divide(){
+		    n2 = document.getElementById("num").value;
+		    document.getElementById("num").value = "";
+			operator = 4;
+		  }
+		  
+		 
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+		  function one(){
+			document.getElementById("num").value += 1;
+		  }
+		  
+		  function two(){
+		    document.getElementById("num").value += 2;
+		  }
+		  
+		  function three(){
+		    document.getElementById("num").value += 3;
+		  }
+		  
+		  function four(){
+		    document.getElementById("num").value += 4;
+		  }
+		  
+		  function five(){
+		    document.getElementById("num").value += 5;
+		  }
+		  
+		  function six(){
+		    document.getElementById("num").value += 6;
+		  }
+		  
+		  function seven(){
+		    document.getElementById("num").value += 7;
+		  }
+		  
+		  function eight(){
+		    document.getElementById("num").value += 8;
+		  }
+		  
+		  function nine(){
+		    document.getElementById("num").value += 9;
+		  }
+		  
+		  
+		  function zero(){
+		    document.getElementById("num").value += 0;
+		  }
+		  
+		  
+		  
+		  
+	  </script>
+  </body>
+</html>
